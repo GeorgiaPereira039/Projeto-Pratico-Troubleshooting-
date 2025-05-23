@@ -8,21 +8,39 @@ Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e
 
 ⚠ Atenção! 
 > O objetivo do projeto é apenas investigar a causa raiz usando técnicas de troubleshooting e as soluções aplicadas são provisórias, não devem ser usadas como solução definitiva pois o uso de VPN e DNS podem causar falsa sensação de segurança, privacidade e introduzir novos riscos. 
-> Para a segurança do usuário o recomendado sempre será entrar em contato direto com o seu provedor para mais detalhes consulte as [considerações finais](link)
+> Para a segurança do usuário o recomendado sempre será entrar em contato direto com o seu provedor. Para mais detalhes consulte as [considerações finais](link)
 
 ---
 ## ⚙️ Etapas do Projeto
-- [Objetivo do Projeto](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#-objetivo-do-projeto)
-- [Mapeamento das Redes](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#1-mapeamento-das-redes)
-  - [IP WAN](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#-ip-wan)
-  - [Carrier Grade NAT (CGNAT)](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#-cgnat-carrier-grade-nat)
-  - [Traffic Shaping](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#-o-que-%C3%A9-traffic-shaping)
-  - [Autenticação](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#-autentica%C3%A7%C3%A3o)
-  - [Protocolos](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#protocolos)
-  - [IEEE 802.11w](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#-ieee-80211w---prote%C3%A7%C3%A3o-de-gerenciamento-de-quadros-pmf)
-  - [SHA256](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#-sha-256---secure-hash-algorithm-256-bits)
-  - [Criptografia WPA2](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#-conjunto-de-cifras-de-criptografia-wpa2)
-  - [O que é QoS](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/edit/main/README.md#-1-o-que-%C3%A9-qos)
+
+- [Objetivo do Projeto](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-objetivo-do-projeto)  
+- [Mapeamento das Redes](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-mapeamento-das-redes)  
+- [CGNAT](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-cgnat-carrier-grade-nat)
+- [O que é Traffic Shaping?](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-o-que-%C3%A9-traffic-shaping)  
+   - [Mecanismos e Algoritmos mais utilizados](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-mecanismos-e-algoritmos-mais-utilizados)
+- [Protocolos PPP e PPPoE](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-protocolos-ppp-e-pppoe)
+- [Autenticação](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-autentica%C3%A7%C3%A3o)  
+   - [Autenticação WPA2 | Misto](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-o-que-%C3%A9-a-autentica%C3%A7%C3%A3o-wpa2misto)  
+   - [WEP](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-wep-wired-equivalent-privacy)
+   - [WPA](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-wpa-wi-fi-protected-access)
+   - [WPA2](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-wpa2-wi-fi-protected-access-2)
+   - [WPA3](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#wpa3-wi-fi-protected-access-3)  
+- [IEEE 802.11w](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-ieee-80211w---prote%C3%A7%C3%A3o-de-gerenciamento-de-quadros-pmf)  
+- [SHA256](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-sha-256---secure-hash-algorithm-256-bits)
+- [Conjunto de Cifras de Criptografia WPA2](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-conjunto-de-cifras-de-criptografia-wpa2)
+   - [TKIP](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-tkip-temporal-key-integrity-protocol)  
+   - [AES-CCMP](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-aes-ccmp-advanced-encryption-standard---ccmp)  
+- [QoS](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-qos---quality-of-service)
+    - [Modelos de QoS](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#modelos-de-qos) 
+    - [QoS em diferentes camadas](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#qos-em-diferentes-camadas)  
+- [Conclusão Técnica](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-conclus%C3%A3o-t%C3%A9cnica)
+- [Configurações Básicas](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-configura%C3%A7%C3%B5es-b%C3%A1sicas)  
+- [Medidas de Mitigação Aplicadas](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#medidas-de-mitiga%C3%A7%C3%A3o-aplicadas)  
+- [Conhecimentos Aplicados e Adquiridos](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#conhecimentos-aplicados-e-adquiridos)  
+- [Ferramentas Utilizadas](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-ferramentas-utilizadas)
+- [Considerações finais](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-conclus%C3%A3o-1)
+- [Sobre]()  
+
 ---
 
 ## 👩🏻‍💻 Objetivo do Projeto
@@ -74,9 +92,9 @@ Durante o mapeamento das redes, identifiquei alguns pontos que despertaram minha
 De acordo com a RFC 6598, os IPs analisados em ambas as redes estão dentro da faixa `100.64.0.0 - 100.127.255.255`, o que pode indicar o uso de CGNAT ou mesmo Traffic Shaping. Para confirmar, consultei o site [Meu IP](https://meuip.com.br/) e identifiquei que se tratava de um IP dinâmico, diferente do IP WAN atribuído ao roteador.
 Isso reforça a hipótese de que essas redes não possuem um IP público exclusivo, indicando o uso de CGNAT pelo provedor de internet.
 
-Vamos entender melhor o que é CGNAT e Traffic Shaping:
+---
 
-### **📖 CGNAT (Carrier-Grade NAT)?**
+### **📖 Introdução ao CGNAT (Carrier-Grade NAT)?**
 
 Em meados dos anos 80, nasceu o IPv4 com a intenção de dar um endereço a cada dispositivo. Esse protocolo utiliza endereços de 32 bits, o que equivale a 2³², um pouco mais de **4 bilhões de IPs únicos**.
 
@@ -242,7 +260,7 @@ Analisando o cenário prático, observa-se que o problema mais plausível é o u
 Durante a análise, também foi identificada a presença dos protocolos PPPoE e PPP, indicando a utilização de métodos de autenticação e encapsulamento típicos em conexões de banda larga.
 
 ---
-### 📖 Protocolos
+### 📖 Protocolos PPP e PPPoE
 
 ### **PPP (Point-to-Point Protocol)**
 
@@ -922,9 +940,7 @@ Essa topologia foi determinante para compreender a distribuição de sinal e as 
 ◻️ Rede A
 - Detecção de CGNAT: Confirmada.
 
-- Scan de portas: Em andamento.
-
-Apesar da análise completa, não foram necessários ajustes na rede A, uma vez que as configurações de segurança e desempenho se mostraram adequadas para o uso atual.
+- Scan de portas: A varredura ativa da rede A não foi realizada devido à presença de mecanismos restritivos, como a ausência de Port Forwarding e a configuração de CGNAT, que impedem conexões externas diretas ao roteador. Embora seja possível realizar varreduras passivas ou utilizar técnicas alternativas, optei por não prosseguir, visto que a rede apresentava estabilidade, sem evidências de falhas relacionadas ao escopo deste diagnóstico. Assim, a priorização foi direcionada à rede B, que apresentava maior instabilidade e impacto na experiência do usuário.
 
 ➡️ Esta rede foi mantida conforme encontrada, sem alterações.
 
@@ -944,8 +960,7 @@ Apesar da análise completa, não foram necessários ajustes na rede A, uma vez 
 
 - Detecção de CGNAT: Confirmada.
 
-- Scan de portas:
-Ferramenta utilizada: Nmap, para escaneamento de portas e identificação de serviços vulneráveis ou expostos.
+- Scan de portas: Uso do Nmap, para escaneamento de portas e identificação de serviços vulneráveis ou expostos.
 
 ⚠ Foi detectada a porta 8291 aberta na rede B, associada ao serviço Winbox do Mikrotik. Embora não tenha sido possível obter acesso administrativo, recomenda-se contato com o provedor para avaliar a necessidade de manter esta porta aberta ou proceder com o bloqueio.
 
@@ -986,39 +1001,36 @@ Ferramenta utilizada: Nmap, para escaneamento de portas e identificação de ser
 
 ## **Conhecimentos aplicados e adquiridos**
 
-| Conceito            | Significado                                                                |
-| ------------------- | -------------------------------------------------------------------------- |
-| **CGNAT**           | Método de compartilhamento de IPs que dificulta conexões P2P               |
-| **Traffic Shaping** | Prática de limitar ou priorizar certos tipos de tráfego                    |
-| **QoS**             | Quality of Service: prioriza pacotes essenciais (como jogos e chamadas)    |
-| **IEEE 802.11w**    | Proteção contra *Deauth Attacks*                                           |
-| **WPA2 + AES**      | Padrão de criptografia seguro para redes Wi-Fi                             |
-| **PPPoE**           | Protocolo de autenticação individual via rede                              |
-| **DNS Público**     | Alternativa que melhora a resposta e evita rotas ineficientes da operadora |
-| **VPN**             | Cria um túnel criptografado, driblando CGNAT e rotas subótimas             |
-
+| **Conceito** | **Significado** |
+| --- | --- |
+| **CGNAT** | Método de compartilhamento de IPs que dificulta conexões P2P |
+| **Traffic Shaping** | Prática de limitar ou priorizar certos tipos de tráfego |
+| **QoS** | Quality of Service: prioriza pacotes essenciais (como jogos e chamadas) |
+| **IEEE 802.11w** | Proteção contra *Deauth Attacks* |
+| **WPA2 + AES** | Padrão de criptografia seguro para redes Wi-Fi |
+| **PPPoE** | Protocolo de autenticação individual via rede |
+| **DNS Público** | Alternativa que melhora a resposta e evita rotas ineficientes da operadora |
+| **VPN** | Criou um túnel criptografado, driblando CGNAT e rotas subótimas. |
+| **Nmap** |  Identificou portas abertas/fechadas e ajudou na análise de acessibilidade através do CGNAT.  |
+| **Traceroute** | Análise do roteamento → identificou saltos internacionais e latência elevada, reforçando impacto do CGNAT. |
+| **Modelo OSI** | Auxiliou na análise das camadas impactadas pelo CGNAT e pelo uso de VPN. |
 
 ---
 
-## 📊 **Ferramentas Utilizadas**
+**📊 Ferramentas Utilizadas**
 
-- [**SpeedTest.net**](http://speedtest.net/) e **PingTools** para testes de latência e banda
-- **ProtonVPN** (modo gratuito) para validar rotas alternativas e impacto do CGNAT
-- **MeuIP** para verificar tipo de IP (privado ou público)
-- **ChatGPT** para consultas e estruturação de explicações
-- **Livro:** TCP/IP em 24 Horas
-- **Sites de referência:** Cisco, Orhan Ergun
-    - https://www.cisco.com/c/pt_br/support/docs/wireless-mobility/wireless-lan-wlan/212576-configure-802-11w-management-frame-prote.html
-    - https://tecnoblog.net/responde/o-que-e-traffic-shaping/
-    - https://www.kaspersky.com.br/resource-center/definitions/wep-vs-wpa
-
-## 📚 **Conceitos Envolvidos**
-
-- **CGNAT**: compartilhamento de IP público → dificulta conexões diretas.
-- **WPA2-PSK + IEEE 802.11w**: segurança avançada contra ataques de desautenticação (DoS).
-- **Traffic Shaping**: possível interferência do ISP em serviços como jogos ou downloads.
-- **Traceroute**: análise do roteamento → identificou saltos internacionais e latência elevada, reforçando impacto do CGNAT.
-- **VPN**: solucionou o problema ao criar rota alternativa mais direta.
+- **PingTools**
+- **ProtonVPN**
+- **Nmap**
+- **ChatGPT**
+- **Livro:** TCP/IP em 24 Horas
+- **Sites de referência:**
+    - [Meu IP](https://meuip.com.br/)
+    - [**SpeedTest**](http://speedtest.net/)
+    - [Configurar a proteção de quadros de gerenciamento 802.11w no WLC](https://www.cisco.com/c/pt_br/support/docs/wireless-mobility/wireless-lan-wlan/212576-configure-802-11w-management-frame-prote.html)
+    - [O que é Traffic Shaping?](https://tecnoblog.net/responde/o-que-e-traffic-shaping/)
+    - [WEP vs WPA](https://www.kaspersky.com.br/resource-center/definitions/wep-vs-wpa)
+    - [O que é Qualidade de Serviço (QoS) em Redes?](https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service#:~:text=Quality%20of%20service%20(QoS)%20is,prioritizing%20specific%20high%2Dperformance%20applications.)
 
 ---
 
@@ -1032,7 +1044,7 @@ Este projeto demonstrou que, mesmo com recursos domésticos e conhecimento técn
 
 **Diagnóstico**:
 
-- Presença de CGNAT na rede XPON.
+- Presença de CGNAT em ambas as redes.
 - Impacto de práticas de Traffic Shaping.
 - QoS habilitado, mas insuficiente frente às condições de roteamento.
 
@@ -1045,10 +1057,39 @@ Este projeto demonstrou que, mesmo com recursos domésticos e conhecimento técn
 
 ---
 
-## 🔹 **Melhorias Futuras**
+## ⚠️ **Considerações Finais**
 
-- Inclusão de imagens dos testes (com dados sensíveis ocultos).
-- Captura de pacotes usando Wireshark.
-- Análise aprofundada de traceroute para servidores dos jogos.
-- Teste com IP fixo público.
-- Explorar impacto do IPv6 na mitigação de CGNAT.
+Este projeto demonstrou como técnicas de troubleshooting podem ser aplicadas para diagnosticar problemas complexos de conectividade, mesmo em ambientes com CGNAT e rotas ineficientes. Entretanto, é fundamental destacar que as soluções aplicadas como o uso de VPNs e DNS públicos  são **paliativas** e não eliminam a necessidade de uma ação estrutural junto à operadora.
+
+Embora a VPN possa contornar rotas ruins e CGNAT temporariamente, ela **não substitui** uma infraestrutura de rede bem configurada e pode introduzir novos riscos, como:
+
+- **Falsa sensação de segurança:** Nem todas as VPNs garantem privacidade efetiva; muitas armazenam logs ou são vulneráveis.
+- **Perda de desempenho:** O tráfego criptografado pode causar lentidão ou bloqueios adicionais.
+- **Novos vetores de ataque:** Alterar DNS ou usar VPN pode expor o usuário a servidores maliciosos ou vulnerabilidades específicas.
+
+Assim, a **recomendação final** sempre será:
+
+**procurar suporte técnico especializado ou o provedor de internet** para verificar a possibilidade de ajustes definitivos, como:
+
+- Atribuição de um IP público fixo.
+- Reconfiguração de roteadores.
+- Implementação de políticas adequadas de QoS.
+
+Este projeto buscou não apenas resolver o problema emergencial, mas também servir como um exemplo de investigação estruturada e consciente, respeitando os limites técnicos e éticos da atuação.
+
+Recomenda-se:  
+
+- **Adotar o IPv6** sempre que possível, evitando as limitações do CGNAT.  
+- Manter o conhecimento técnico **sempre atualizado**, principalmente em relação a segurança em redes Wi-Fi.  
+- Realizar **testes constantes** na infraestrutura local para antecipar falhas e gargalos.  
+- Compartilhar o conhecimento, assim como feito neste projeto!
+  
+---
+
+## 🔐**Sobre**
+
+Este projeto foi desenvolvido por **Georgia Pereira**, estudante de **Ciências da Computação** com foco em **Cibersegurança** e **Infraestrutura de Redes**.
+
+O objetivo é aplicar, consolidar e compartilhar conhecimentos técnicos sobre **troubleshooting em redes domésticas**, abordando conceitos fundamentais como **CGNAT, QoS, SHA-256, Traffic Shaping**, entre outros.
+
+O conteúdo está estruturado de forma didática e técnica para servir de referência tanto para estudos pessoais quanto para outros profissionais da área.
