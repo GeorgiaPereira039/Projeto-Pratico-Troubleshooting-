@@ -8,7 +8,7 @@ Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e
 
 ⚠ Atenção! 
 > O objetivo do projeto é apenas investigar a causa raiz usando técnicas de troubleshooting e as soluções aplicadas são provisórias, não devem ser usadas como solução definitiva pois o uso de VPN e DNS podem causar falsa sensação de segurança, privacidade e introduzir novos riscos. 
-> Para a segurança do usuário o recomendado sempre será entrar em contato direto com o seu provedor. Para mais detalhes consulte as [considerações finais](link)
+> Para a segurança do usuário o recomendado sempre será entrar em contato direto com o seu provedor. Para mais detalhes consulte as [Considerações finais](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-considera%C3%A7%C3%B5es-finais)
 
 ---
 ## ⚙️ Etapas do Projeto
@@ -37,7 +37,7 @@ Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e
 - [Configurações Básicas](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-configura%C3%A7%C3%B5es-b%C3%A1sicas)  
 - [Medidas de Mitigação Aplicadas](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#medidas-de-mitiga%C3%A7%C3%A3o-aplicadas)  
 - [Conceitos Aplicados e Adquiridos](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#conceitos-aplicados-e-adquiridos)  
-- [Ferramentas Utilizadas](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-ferramentas-utilizadas)
+- [Ferramentas Utilizadas](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#ferramentas-utilizadas)
 - [Conclusão](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-conclus%C3%A3o-1)
 - [Considerações finais](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-considera%C3%A7%C3%B5es-finais)
 - [Sobre](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#sobre)  
@@ -1000,7 +1000,7 @@ Essa topologia foi determinante para compreender a distribuição de sinal e as 
 
 ---
 
-## **Conhecimentos aplicados e adquiridos**
+## **Conceitos Aplicados e Adquiridos**
 
 | **Conceito** | **Significado** |
 | --- | --- |
