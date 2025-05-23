@@ -8,7 +8,7 @@ Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e
 
 ⚠ Atenção! 
 > O objetivo do projeto é apenas investigar a causa raiz usando técnicas de troubleshooting e as soluções aplicadas são provisórias, não devem ser usadas como solução definitiva pois o uso de VPN e DNS podem causar falsa sensação de segurança, privacidade e introduzir novos riscos. 
-> Para a segurança do usuário o recomendado sempre será entrar em contato direto com o seu provedor. Para mais detalhes consulte as [Considerações finais](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-considera%C3%A7%C3%B5es-finais)
+> Para a segurança do usuário o recomendado sempre será entrar em contato direto com o seu provedor. Para mais detalhes consulte as [Considerações finais](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-considera%C3%A7%C3%B5es-finais).
 
 ---
 ## ⚙️ Etapas do Projeto
@@ -46,7 +46,7 @@ Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e
 
 ## 👩🏻‍💻 Objetivo do Projeto
 
-Este projeto nasceu de uma situação real de instabilidade em conexões com servidores internacionais em jogos e aplicativos (como *Love Nikki*, *Genshin Impact* e *Pokémon TCGP*). A proposta foi diagnosticar a causa comparando redes GPON e XPON, com foco em aplicação prática de conhecimentos sobre:
+Este projeto nasceu de uma situação real de instabilidade em conexões com servidores internacionais em jogos e aplicativos (como *Love Nikki*, *Genshin Impact* e *Pokémon TCGP*). A proposta foi diagnosticar a causa comparando redes GPON e XPON, com foco em aplicação prática sobre:
 
 - Latência e perda de pacotes
 - CGNAT e Traffic Shaping
@@ -97,7 +97,7 @@ Isso reforça a hipótese de que essas redes não possuem um IP público exclusi
 
 ### **📖 Introdução ao CGNAT (Carrier-Grade NAT)?**
 
-Em meados dos anos 80, nasceu o IPv4 com a intenção de dar um endereço a cada dispositivo. Esse protocolo utiliza endereços de 32 bits, o que equivale a 2³², um pouco mais de **4 bilhões de IPs únicos**.
+Em meados da década de 1980, nasceu o IPv4 com a intenção de dar um endereço a cada dispositivo. Esse protocolo utiliza endereços de 32 bits, o que equivale a 2³², um pouco mais de **4 bilhões de IPs únicos**.
 
 O que ninguém contava era com o avanço e a popularização da rede digital.
 
@@ -111,7 +111,7 @@ O **Carrier-Grade NAT** (CGNAT) ou **Large-Scale NAT (LSN)** é uma técnica de 
 
 Com o CGNAT, **múltiplos clientes compartilham um único endereço IPv4 público**. Para isso, o provedor atribui aos clientes **endereços IPv4 privados intermediários**, normalmente dentro da faixa **100.64.0.0/10**, conforme definido na **RFC 6598**.
 
-### **◻ Funcionamento do CGNAT**
+### **Funcionamento do CGNAT**
 
 1. O cliente recebe um **endereço IP privado intermediário**, distinto dos endereços privados tradicionais (RFC 1918), como `192.168.0.0/16` ou `10.0.0.0/8`.
 2. O roteador do cliente realiza a **primeira tradução NAT (Network Address Translation)**, convertendo os endereços da rede local (LAN) para o IP privado intermediário.
@@ -175,7 +175,7 @@ Entre os principais objetivos do Traffic Shaping, destacam-se:
 
 ---
 
-### **◻ Funcionamento**
+### **Funcionamento**
 
 O traffic shaping atua na camada de rede ou enlace, sendo implementado através de mecanismos que:
 
@@ -187,7 +187,7 @@ Pacotes podem ser **enfileirados** (buffering) até que possam ser transmitidos 
 
 ---
 
-### **◻ Mecanismos e Algoritmos mais utilizados**
+### **Mecanismos e Algoritmos mais utilizados**
 
 ### **Token Bucket**
 
@@ -217,7 +217,7 @@ Pacotes podem ser **enfileirados** (buffering) até que possam ser transmitidos 
 
 ---
 
-### **◻ Aplicações típicas**
+### **Aplicações típicas**
 
 - **Provedores de serviços de Internet (ISPs):** limitar a largura de banda contratada pelos clientes.
 - **Backbones de rede:** assegurar estabilidade e evitar congestionamentos em links críticos.
@@ -511,6 +511,7 @@ Esses quadros passam a ser autenticados com base nas chaves derivadas do protoco
 
 - O **IEEE 802.11w** é **obrigatório** no **WPA3**.
 - No **WPA2**, a proteção de PMF é **opcional**, mas fortemente recomendada.
+- Desde 2020, a certificação Wi-Fi Alliance exige PMF (802.11w) como obrigatório em novos dispositivos.
 
 A implementação completa do 802.11w é chamada de **Robust Security Network Associations (RSNA)**.
 
@@ -674,7 +675,7 @@ No contexto do **WPA2**, duas cifras principais aparecem:
 
 Esses algoritmos são utilizados para **criptografia de dados**, garantindo a **confidencialidade** e **integridade** das informações transmitidas na rede Wi-Fi.
 
-## **◻ TKIP (Temporal Key Integrity Protocol)**
+## **TKIP (Temporal Key Integrity Protocol)**
 
 ### **💻 Resumo:**
 
@@ -703,7 +704,7 @@ Esses algoritmos são utilizados para **criptografia de dados**, garantindo a **
 
 ---
 
-### **◻ AES-CCMP (Advanced Encryption Standard - CCMP)**
+### **AES-CCMP (Advanced Encryption Standard - CCMP)**
 
 ### **💻 Resumo:**
 
@@ -731,7 +732,7 @@ Esses algoritmos são utilizados para **criptografia de dados**, garantindo a **
 
 ---
 
-### **◻ Comparativo entre TKIP e AES-CCMP**
+### **Comparativo entre TKIP e AES-CCMP**
 
 | **Característica** | **TKIP** | **AES-CCMP** |
 | --- | --- | --- |
@@ -936,9 +937,8 @@ Essa topologia foi determinante para compreender a distribuição de sinal e as 
 
 ##  **💻 Configurações Básicas**
 
-### **◻ Rede A**
+### **Rede A**
 
-◻️ Rede A
 - Detecção de CGNAT: Confirmada.
 
 - Scan de portas: A varredura ativa da rede A não foi realizada devido à presença de mecanismos restritivos, como a ausência de Port Forwarding e a configuração de CGNAT, que impedem conexões externas diretas ao roteador. Embora seja possível realizar varreduras passivas ou utilizar técnicas alternativas, optei por não prosseguir, visto que a rede apresentava estabilidade, sem evidências de falhas relacionadas ao escopo deste diagnóstico. Assim, a priorização foi direcionada à rede B, que apresentava maior instabilidade e impacto na experiência do usuário.
@@ -947,7 +947,7 @@ Essa topologia foi determinante para compreender a distribuição de sinal e as 
 
 ---
 
-### **◻ Rede B**
+### **Rede B**
 
 - Segurança Wi-Fi: WPA2 ativado, com autenticação SHA-256.
 
