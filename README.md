@@ -1,11 +1,11 @@
-# Projeto-Pratico-Troubleshooting-
+# Projeto Prático de Troubleshooting
 Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e XPON, com foco em latência, CGNAT, QoS e impacto em aplicações internacionais.
 
 ---
 
-⚠ Atenção! 
-> O objetivo do projeto é apenas investigar a causa raiz usando técnicas de troubleshooting e as soluções aplicadas são provisórias, não devem ser usadas como solução definitiva pois o uso de VPN e DNS podem causar falsa sensação de segurança, privacidade e introduzir novos riscos. 
-> Para a segurança do usuário o recomendado sempre será entrar em contato direto com o seu provedor. Para mais detalhes consulte as [Considerações finais](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-considera%C3%A7%C3%B5es-finais).
+## **⚠ Atenção!** 
+O objetivo do projeto é apenas investigar a causa raiz usando técnicas de troubleshooting e as soluções aplicadas são provisórias, não devem ser usadas como solução definitiva pois o uso de VPN e DNS podem causar falsa sensação de segurança, privacidade e introduzir novos riscos. 
+Para a segurança do usuário o recomendado sempre será entrar em contato direto com o seu provedor. Para mais detalhes consulte as [Considerações finais](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-considera%C3%A7%C3%B5es-finais).
 
 ---
 ## ⚙️ Etapas do Projeto
@@ -17,7 +17,7 @@ Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e
    - [Mecanismos e Algoritmos mais utilizados](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-mecanismos-e-algoritmos-mais-utilizados)
 - [Protocolos PPP e PPPoE](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-protocolos-ppp-e-pppoe)
 - [Autenticação](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-autentica%C3%A7%C3%A3o)  
-   - [Autenticação WPA2 | Misto](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-o-que-%C3%A9-a-autentica%C3%A7%C3%A3o-wpa2misto)  
+   - [Autenticação WPA2/Misto](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-o-que-%C3%A9-a-autentica%C3%A7%C3%A3o-wpa2misto)  
    - [WEP](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-wep-wired-equivalent-privacy)
    - [WPA](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-wpa-wi-fi-protected-access)
    - [WPA2](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-wpa2-wi-fi-protected-access-2)
