@@ -13,33 +13,34 @@ Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e
 ---
 ## ⚙️ Etapas do Projeto
 
-- [Objetivo do Projeto](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-objetivo-do-projeto)  
-- [Mapeamento das Redes](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-mapeamento-das-redes)  
-- [CGNAT](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-cgnat-carrier-grade-nat)
-- [O que é Traffic Shaping?](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-o-que-%C3%A9-traffic-shaping)  
-   - [Mecanismos e Algoritmos mais utilizados](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-mecanismos-e-algoritmos-mais-utilizados)
-- [Protocolos PPP e PPPoE](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-protocolos-ppp-e-pppoe)
-- [Autenticação](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-autentica%C3%A7%C3%A3o)  
-   - [Autenticação WPA2 | Misto](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-o-que-%C3%A9-a-autentica%C3%A7%C3%A3o-wpa2misto)  
-   - [WEP](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-wep-wired-equivalent-privacy)
-   - [WPA](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-wpa-wi-fi-protected-access)
-   - [WPA2](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-wpa2-wi-fi-protected-access-2)
-   - [WPA3](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#wpa3-wi-fi-protected-access-3)  
-- [IEEE 802.11w](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-ieee-80211w---prote%C3%A7%C3%A3o-de-gerenciamento-de-quadros-pmf)  
-- [SHA256](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-sha-256---secure-hash-algorithm-256-bits)
-- [Conjunto de Cifras de Criptografia WPA2](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-conjunto-de-cifras-de-criptografia-wpa2)
-   - [TKIP](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-tkip-temporal-key-integrity-protocol)  
-   - [AES-CCMP](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-aes-ccmp-advanced-encryption-standard---ccmp)  
-- [QoS](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-qos---quality-of-service)
-    - [Modelos de QoS](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#modelos-de-qos) 
-    - [QoS em diferentes camadas](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#qos-em-diferentes-camadas)  
-- [Conclusão Técnica](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-conclus%C3%A3o-t%C3%A9cnica)
-- [Configurações Básicas](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-configura%C3%A7%C3%B5es-b%C3%A1sicas)  
-- [Medidas de Mitigação Aplicadas](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#medidas-de-mitiga%C3%A7%C3%A3o-aplicadas)  
-- [Conhecimentos Aplicados e Adquiridos](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#conhecimentos-aplicados-e-adquiridos)  
-- [Ferramentas Utilizadas](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-ferramentas-utilizadas)
-- [Considerações finais](https://github.com/GeorgiaPereira039/Projeto-Pr-tico-Troubleshooting-/blob/main/README.md#-conclus%C3%A3o-1)
-- [Sobre]()  
+- [Objetivo do Projeto](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-objetivo-do-projeto)  
+- [Mapeamento das Redes](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-mapeamento-das-redes)  
+- [ Introdução ao CGNAT (Carrier-Grade NAT)](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-introdu%C3%A7%C3%A3o-ao-cgnat-carrier-grade-nat)
+- [O que é Traffic Shaping?](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-o-que-%C3%A9-traffic-shaping)  
+   - [Mecanismos e Algoritmos mais utilizados](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-mecanismos-e-algoritmos-mais-utilizados)
+- [Protocolos PPP e PPPoE](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-protocolos-ppp-e-pppoe)
+- [Autenticação](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-autentica%C3%A7%C3%A3o)  
+   - [Autenticação WPA2 | Misto](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-o-que-%C3%A9-a-autentica%C3%A7%C3%A3o-wpa2misto)  
+   - [WEP](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-wep-wired-equivalent-privacy)
+   - [WPA](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-wpa-wi-fi-protected-access)
+   - [WPA2](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-wpa2-wi-fi-protected-access-2)
+   - [WPA3](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#wpa3-wi-fi-protected-access-3)  
+- [IEEE 802.11w](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-ieee-80211w---prote%C3%A7%C3%A3o-de-gerenciamento-de-quadros-pmf)  
+- [SHA256](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-sha-256---secure-hash-algorithm-256-bits)
+- [Conjunto de Cifras de Criptografia WPA2](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-conjunto-de-cifras-de-criptografia-wpa2)
+   - [TKIP](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-tkip-temporal-key-integrity-protocol)  
+   - [AES-CCMP](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-aes-ccmp-advanced-encryption-standard---ccmp)  
+- [QoS](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-qos---quality-of-service)
+    - [Modelos de QoS](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#modelos-de-qos) 
+    - [QoS em diferentes camadas](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#qos-em-diferentes-camadas)  
+- [Conclusão Técnica](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-conclus%C3%A3o-t%C3%A9cnica)
+- [Configurações Básicas](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-configura%C3%A7%C3%B5es-b%C3%A1sicas)  
+- [Medidas de Mitigação Aplicadas](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#medidas-de-mitiga%C3%A7%C3%A3o-aplicadas)  
+- [Conceitos Aplicados e Adquiridos](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#conceitos-aplicados-e-adquiridos)  
+- [Ferramentas Utilizadas](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-ferramentas-utilizadas)
+- [Conclusão](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#-conclus%C3%A3o-1)
+- [Considerações finais](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#%EF%B8%8F-considera%C3%A7%C3%B5es-finais)
+- [Sobre](https://github.com/GeorgiaPereira039/Projeto-Pratico-Troubleshooting-/blob/main/README.md#sobre)  
 
 ---
 
@@ -1017,7 +1018,7 @@ Essa topologia foi determinante para compreender a distribuição de sinal e as 
 
 ---
 
-**📊 Ferramentas Utilizadas**
+## **📊 Ferramentas Utilizadas**
 
 - **PingTools**
 - **ProtonVPN**
