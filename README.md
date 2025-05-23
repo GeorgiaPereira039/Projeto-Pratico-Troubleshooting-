@@ -1,10 +1,7 @@
 # Projeto-Pratico-Troubleshooting-
 Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e XPON, com foco em latência, CGNAT, QoS e impacto em aplicações internacionais.
 
-### Visão Rápida
-|Sem DNS | Com DNS |
-|--------|---------|
-| !(Erro)(link-gif-erro) | !(Funcionando)[link] |
+---
 
 ⚠ Atenção! 
 > O objetivo do projeto é apenas investigar a causa raiz usando técnicas de troubleshooting e as soluções aplicadas são provisórias, não devem ser usadas como solução definitiva pois o uso de VPN e DNS podem causar falsa sensação de segurança, privacidade e introduzir novos riscos. 
@@ -1094,3 +1091,5 @@ Este projeto foi desenvolvido por **Georgia Pereira**, estudante de **Ciências 
 O objetivo é aplicar, consolidar e compartilhar conhecimentos técnicos sobre **troubleshooting em redes domésticas**, abordando conceitos fundamentais como **CGNAT, QoS, SHA-256, Traffic Shaping**, entre outros.
 
 O conteúdo está estruturado de forma didática e técnica para servir de referência tanto para estudos pessoais quanto para outros profissionais da área.
+
+*Por questões de segurança e privacidade, optou-se por não incluir capturas de tela ou vídeos neste relatório. Como os testes não foram realizados em ambiente controlado (laboratório), qualquer demonstração prática poderia expor informações sensíveis da minha infraestrutura pessoal, comprometendo minha integridade e segurança.*
