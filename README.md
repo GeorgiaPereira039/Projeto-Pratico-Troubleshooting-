@@ -1,4 +1,4 @@
-# Projeto Prático de Troubleshooting
+# [Projeto Prático de Troubleshooting](https://georgiapereira039.github.io/Projeto-Pratico-Troubleshooting-/)
 Projeto de troubleshooting e análise comparativa entre redes domésticas GPON e XPON, com foco em latência, CGNAT, QoS e impacto em aplicações internacionais.
 
 ---
